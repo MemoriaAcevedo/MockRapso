@@ -25,13 +25,12 @@ import entities.Tipousuario;
 import entities.Usuario;
 import java.util.List;
 import javax.ejb.Local;
-import javax.ejb.Remote;
 
 /**
  *
  * @author Sebastian
  */
-@Remote
+@Local
 public interface UsuarioEJBLocal {
 
     String login(String email, String pass);

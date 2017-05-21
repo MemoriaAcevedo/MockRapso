@@ -9,13 +9,12 @@ import entities.Cuenta;
 import entities.Operacion;
 import java.util.List;
 import javax.ejb.Local;
-import javax.ejb.Remote;
 
 /**
  *
  * @author Sebastian
  */
-@Remote
+@Local
 public interface ModuloDEJBLocal {
 
     String loginD(String rut, String pass);
